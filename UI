@@ -1,0 +1,224 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("ImageLabel")
+local ExcuteFrame = Instance.new("ImageLabel")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local CodeFrame = Instance.new("ImageLabel")
+local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
+local TextBox = Instance.new("TextBox")
+local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
+local TextLabel = Instance.new("TextLabel")
+local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
+local TextButton = Instance.new("TextButton")
+local UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_7 = Instance.new("UIAspectRatioConstraint")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Frame.Name = "Frame"
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Frame.Position = UDim2.new(0.186184689, 0, 0.214878529, 0)
+Frame.Size = UDim2.new(0.734192014, 0, 0.520742357, 0)
+Frame.Image = "rbxassetid://3570695787"
+Frame.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Frame.ScaleType = Enum.ScaleType.Slice
+Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame.SliceScale = 0.120
+
+ExcuteFrame.Name = "Excute Frame"
+ExcuteFrame.Parent = Frame
+ExcuteFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExcuteFrame.BackgroundTransparency = 1.000
+ExcuteFrame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ExcuteFrame.Position = UDim2.new(0.316132069, 0, 0.789778531, 0)
+ExcuteFrame.Size = UDim2.new(0.366826147, 0, 0.18238993, 0)
+ExcuteFrame.Image = "rbxassetid://3570695787"
+ExcuteFrame.ImageColor3 = Color3.fromRGB(48, 48, 48)
+ExcuteFrame.ScaleType = Enum.ScaleType.Slice
+ExcuteFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+ExcuteFrame.SliceScale = 0.120
+
+UIAspectRatioConstraint.Parent = ExcuteFrame
+UIAspectRatioConstraint.AspectRatio = 2.644
+
+CodeFrame.Name = "Code Frame"
+CodeFrame.Parent = Frame
+CodeFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CodeFrame.BackgroundTransparency = 1.000
+CodeFrame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+CodeFrame.Position = UDim2.new(0.0234996546, 0, 0.132075474, 0)
+CodeFrame.Size = UDim2.new(0.95693779, 0, 0.633123696, 0)
+CodeFrame.Image = "rbxassetid://3570695787"
+CodeFrame.ImageColor3 = Color3.fromRGB(29, 29, 29)
+CodeFrame.ScaleType = Enum.ScaleType.Slice
+CodeFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+CodeFrame.SliceScale = 0.120
+
+UIAspectRatioConstraint_2.Parent = CodeFrame
+UIAspectRatioConstraint_2.AspectRatio = 1.987
+
+TextBox.Parent = Frame
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.BackgroundTransparency = 9.000
+TextBox.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextBox.Position = UDim2.new(0.0346639305, 0, 0.145062521, 0)
+TextBox.Size = UDim2.new(0.933014333, 0, 0.599580705, 0)
+TextBox.Font = Enum.Font.Unknown
+TextBox.PlaceholderColor3 = Color3.fromRGB(171, 171, 171)
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextSize = 20.000
+TextBox.TextWrapped = true
+TextBox.TextXAlignment = Enum.TextXAlignment.Left
+TextBox.TextYAlignment = Enum.TextYAlignment.Top
+
+UIAspectRatioConstraint_3.Parent = TextBox
+UIAspectRatioConstraint_3.AspectRatio = 2.045
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0223285481, 0, 0, 0)
+TextLabel.Size = UDim2.new(0.373205751, 0, 0.132075474, 0)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "Pro Hacker"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UIAspectRatioConstraint_4.Parent = TextLabel
+UIAspectRatioConstraint_4.AspectRatio = 3.714
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.316132069, 0, 0.78197062, 0)
+TextButton.Size = UDim2.new(0.365231246, 0, 0.197064996, 0)
+TextButton.Font = Enum.Font.SourceSansBold
+TextButton.Text = "Execute"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+UIAspectRatioConstraint_5.Parent = TextButton
+UIAspectRatioConstraint_5.AspectRatio = 2.436
+
+UIAspectRatioConstraint_6.Parent = Frame
+UIAspectRatioConstraint_6.AspectRatio = 1.314
+
+UIAspectRatioConstraint_7.Parent = ScreenGui
+UIAspectRatioConstraint_7.AspectRatio = 0.932
+
+-- Scripts:
+
+local function SGVQGE_fake_script() -- Frame.Smooth GUI Dragging 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UserInputService = game:GetService("UserInputService")
+	local runService = (game:GetService("RunService"));
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	function Lerp(a, b, m)
+		return a + (b - a) * m
+	end;
+	
+	local lastMousePos
+	local lastGoalPos
+	local DRAG_SPEED = (8); -- // The speed of the UI darg.
+	function Update(dt)
+		if not (startPos) then return end;
+		if not (dragging) and (lastGoalPos) then
+			gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
+			return 
+		end;
+	
+		local delta = (lastMousePos - UserInputService:GetMouseLocation())
+		local xGoal = (startPos.X.Offset - delta.X);
+		local yGoal = (startPos.Y.Offset - delta.Y);
+		lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
+		gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
+	end;
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			lastMousePos = UserInputService:GetMouseLocation()
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	runService.Heartbeat:Connect(Update)
+end
+coroutine.wrap(SGVQGE_fake_script)()
+local function DNDK_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local button = script.Parent
+	local textbox = script.Parent.Parent.TextBox
+	button.MouseButton1Click:Connect(function()
+		loadstring(textbox.Text)()
+	end)
+end
+coroutine.wrap(DNDK_fake_script)()
+local function ISJMUV_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	-- الحصول على الخدمات المطلوبة
+	local UserInputService = game:GetService("UserInputService")
+	local StarterGui = game:GetService("StarterGui")
+	
+	-- العثور على الإطار الذي تريد إظهاره وإخفاءه
+	local screenGui = script.Parent -- LocalScript هو فرع من ScreenGui
+	local frame = screenGui:WaitForChild("Frame") -- اسم الإطار الخاص بك
+	
+	-- تعريف حالة الإطار (إذا كان مرئيًا أم لا)
+	local isVisible = true
+	
+	-- دالة لتبديل حالة الإطار بين الظهور والإخفاء
+	local function toggleFrameVisibility()
+		isVisible = not isVisible
+		frame.Visible = isVisible
+	end
+	
+	-- رصد الضغط على زر Delete
+	UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
+		if input.KeyCode == Enum.KeyCode.Delete and not gameProcessedEvent then
+			toggleFrameVisibility()
+		end
+	end)
+end
+coroutine.wrap(ISJMUV_fake_script)()
